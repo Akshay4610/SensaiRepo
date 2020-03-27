@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Sensai"
+    }
+  },
+  "defaultProject": "Sensai",
+  "cli": {
+    "analytics": false
+  }
 }
