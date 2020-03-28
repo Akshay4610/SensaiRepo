@@ -1,35 +1,35 @@
 
 /* TODO check for font */
-/* @font-face {
+@font-face {
     font-family: 'SegoeUI-Semibold';
-    src: url('../fonts/SegoeUI-Semibold/SegoeUI-Semibold.eot');
-    src: url('../fonts/SegoeUI-Semibold/SegoeUI-Semibold.eot') format('embedded-opentype'),
-    url('../fonts/SegoeUI-Semibold/SegoeUI-Semibold.woff') format('woff'),
-    url('../fonts/SegoeUI-Semibold/SegoeUI-Semibold.ttf') format('truetype'),
-    url('../fonts/SegoeUI-Semibold/SegoeUI-Semibold.svg#PFDinTextProMedium') format('svg');
+    src: url('../assets/fonts/SegoeUI-Semibold/SegoeUI-Semibold.eot');
+    src: url('../assets/fonts/SegoeUI-Semibold/SegoeUI-Semibold.eot') format('embedded-opentype'),
+    url('../assets/fonts/SegoeUI-Semibold/SegoeUI-Semibold.woff') format('woff'),
+    url('../assets/fonts/SegoeUI-Semibold/SegoeUI-Semibold.ttf') format('truetype'),
+    url('../assets/fonts/SegoeUI-Semibold/SegoeUI-Semibold.svg#PFDinTextProMedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'SegoeUI-Regular';
-    src: url('../fonts/SegoeUI-Regular/SegoeUI-Regular.eot');
-    src: url('../fonts/SegoeUI-Regular/SegoeUI-Regular.eot') format('embedded-opentype'),
-    url('../fonts/SegoeUI-Regular/SegoeUI-Regular.woff') format('woff'),
-    url('../fonts/SegoeUI-Regular/SegoeUI-Regular.ttf') format('truetype'),
-    url('../fonts/SegoeUI-Regular/SegoeUI-Regular.svg#PFDinTextProMedium') format('svg');
+    src: url('../assets/fonts//SegoeUI-Regular/SegoeUI-Regular.eot');
+    src: url('../assets/fonts/SegoeUI-Regular/SegoeUI-Regular.eot') format('embedded-opentype'),
+    url('../assets/fonts/SegoeUI-Regular/SegoeUI-Regular.woff') format('woff'),
+    url('../assets/fonts/SegoeUI-Regular/SegoeUI-Regular.ttf') format('truetype'),
+    url('../assets/fonts/SegoeUI-Regular/SegoeUI-Regular.svg#PFDinTextProMedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'fontawesome';
-    src: url('../fonts/Font-Awesome/fontawesome-webfont.eot');
-    src: url('../fonts/Font-Awesome/fontawesome-webfont.eot') format('embedded-opentype'),
-    url('../fonts/Font-Awesome/fontawesome-webfont.woff') format('woff'),
-    url('../fonts/Font-Awesome/fontawesome-webfont.ttf') format('truetype'),
-    url('../fonts/Font-Awesome/fontawesome-webfont.svg#PFDinTextProMedium') format('svg');
+    src: url('../assets/fonts/Font-Awesome/fontawesome-webfont.eot');
+    src: url('../assets/fonts/Font-Awesome/fontawesome-webfont.eot') format('embedded-opentype'),
+    url('../assets/fonts/Font-Awesome/fontawesome-webfont.woff') format('woff'),
+    url('../assets/fonts/Font-Awesome/fontawesome-webfont.ttf') format('truetype'),
+    url('../assets/fonts/Font-Awesome/fontawesome-webfont.svg#PFDinTextProMedium') format('svg');
     font-weight: normal;
     font-style: normal;
-} */
+}
 header{
     padding-top: 73px;
 }
