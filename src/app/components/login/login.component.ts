@@ -5,12 +5,16 @@ import { first } from 'rxjs/operators';
 
 import { AuthenticationService } from '../../core/services/authentication.service';
 
-@Component({templateUrl: 'login.component.html'})
+@Component({
+  templateUrl: 'login.component.html',
+  styleUrls: ['./login.component.css']
+})
 export class LoginComponent implements OnInit {
   loginFrom: FormGroup;
   loading = false;
   submitted = false;
   returnURL: string;
+  loginInvalid: true;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -39,6 +43,8 @@ export class LoginComponent implements OnInit {
     //stop here if the form in invalid
     if(this.loginFrom.invalid) {
       return;
+      this.loginInvalid = true;
+
     }
 
     this.loading = true;
