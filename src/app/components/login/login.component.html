@@ -1,0 +1,42 @@
+
+    <div class="generic-body">
+        <div class="modal" id="login">
+            <div class="modal-dialog generic-modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+        <mat-card>
+            <mat-card-title>Login</mat-card-title>
+        <mat-card-content>
+        <form class="form-group" [formGroup]="loginFrom" (ngSubmit)="onSubmit()">
+        <p>
+            <mat-form-field class="form-control">
+            <input type="text" matInput placeholder="Username" formControlName="username">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field class="form-control">
+            <input type="password" matInput placeholder="Password" formControlName="password">
+            </mat-form-field>
+        </p>
+
+        <!-- <p *ngIf="error" class="error">
+            {{ error }}
+        </p> -->
+
+        <div class="button">
+            <button class="btn btn-primary"   type="submit" mat-raised-button>
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                Login
+            </button>
+            <a routerLink="/register" class="btn btn-link">Register</a>
+        </div>
+
+        </form>
+        </mat-card-content>
+        </mat-card>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
