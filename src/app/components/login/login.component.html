@@ -1,42 +1,54 @@
 
-    <div class="generic-body">
-        <div class="modal" id="login">
-            <div class="modal-dialog generic-modal">
-                <div class="modal-content">
-                    <div class="modal-body">
-        <mat-card>
-            <mat-card-title>Login</mat-card-title>
-        <mat-card-content>
-        <form class="form-group" [formGroup]="loginFrom" (ngSubmit)="onSubmit()">
-        <p>
-            <mat-form-field class="form-control">
-            <input type="text" matInput placeholder="Username" formControlName="username">
-            </mat-form-field>
-        </p>
 
-        <p>
-            <mat-form-field class="form-control">
-            <input type="password" matInput placeholder="Password" formControlName="password">
-            </mat-form-field>
-        </p>
+  <div class="modal" id="login">
 
-        <!-- <p *ngIf="error" class="error">
-            {{ error }}
-        </p> -->
+      <div class="modal-dialog generic-modal">
 
-        <div class="button">
-            <button class="btn btn-primary"   type="submit" mat-raised-button>
-                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
-                Login
-            </button>
-            <a routerLink="/register" class="btn btn-link">Register</a>
-        </div>
+          <div class="modal-content">
 
-        </form>
-        </mat-card-content>
-        </mat-card>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+              <div class="modal-body">
+                  <form [formGroup]="loginFrom" (ngSubmit)="onSubmit()">
+
+                      <div class="form-group">
+                          <mat-card>
+                              <mat-card-content>
+                                  <form [formGroup]="loginFrom" (ngSubmit)="onSubmit()">
+                                      <!-- <h2>Log In</h2> -->
+                                      <mat-error *ngIf="loginInvalid">
+                                          The username and password were not recognised
+                                      </mat-error>
+                                      <mat-form-field class="full-width-input">
+                                          <input matInput placeholder="Email" formControlName="username" required>
+                                          <mat-error>
+                                              Please provide a valid email address
+                                          </mat-error>
+                                      </mat-form-field>
+                                      <mat-form-field class="full-width-input">
+                                          <input matInput color="white" type="password" placeholder="Password" formControlName="password" required>
+                                          <mat-error>
+                                              Please provide a valid password
+                                          </mat-error>
+                                      </mat-form-field>
+                                      <!-- <button class="login_button" mat-raised-button color="primary">Login</button> -->
+                                  </form>
+                              </mat-card-content>
+                          </mat-card>
+                      </div>
+                      <div class="form-check">
+                          <div class="form-group">
+                              <input type="checkbox" id="check1">
+                              <label for="check1">keep me logged in</label>
+                              <a href="" class="forgot-psw">Forgot Password ?</a>
+                          </div>
+                      </div>
+                      <div class="btn-decoration"> <span>Login</span> </div>
+                      <button type="submit" class="btn btn-primary generic-btn">Login</button>
+                      <div class="sign-up-details">
+                          <a href="" class="nav-link signup-btn"> Sign Up</a> <span>  if you don't have an account.</span>
+                      </div>
+                  </form>
+
+              </div>
+          </div>
+      </div>
+  </div>
