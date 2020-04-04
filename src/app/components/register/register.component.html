@@ -1,4 +1,4 @@
-<h2>Register</h2>
+<!-- <h2>Register</h2>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="firstName">First Name</label>
@@ -36,4 +36,68 @@
         </button>
         <a routerLink="/login" class="btn btn-link">Cancel</a>
     </div>
-</form>
+</form> -->
+
+
+<div class="modal" id="signup">
+
+    <div class="modal-dialog generic-modal">
+
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <mat-card>
+                            <mat-card-content>
+                                    <mat-error>
+                                        The username and password were not recognised
+                                    </mat-error>
+                                    <mat-form-field class="full-width-input">
+                                        <input matInput placeholder="Full Name" formControlName="fullName" required>
+                                        <mat-error>
+                                            Please provide a valid email address
+                                        </mat-error>
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width-input">
+                                        <input matInput placeholder="Email" formControlName="email" required>
+                                        <mat-error>
+                                            Please provide a valid email address
+                                        </mat-error>
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width-input">
+                                        <input matInput color="white" type="password" placeholder="Password" formControlName="password" required>
+                                        <mat-error>
+                                            Please provide a valid password
+                                        </mat-error>
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width-input">
+                                        <input matInput color="white" type="password" placeholder="Retype Password" formControlName="retypePassword" required>
+                                        <mat-error>
+                                            Please provide a valid password
+                                        </mat-error>
+                                    </mat-form-field>
+                                    <!-- <button class="login_button" mat-raised-button color="primary">Login</button> -->
+                               
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                    <div class="form-check">
+                        <div class="form-group">
+                            <input type="checkbox" id="check" class="cagree">
+                            <label for="check">I have accepted the Term and Conditions</label>
+
+                        </div>
+                    </div>
+                    <div class="btn-decoration"><span>Sign up</span></div>
+                    <button (click)="onSubmit()" type="submit" class="btn btn-primary generic-btn">Sign up</button>
+                    <div class="sign-up-details">
+                        <a routerLink='/login' class="nav-link login-btn"> Login</a> <span> if you already have an account.</span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

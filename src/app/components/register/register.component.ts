@@ -6,9 +6,12 @@ import { first } from 'rxjs/operators';
 import { AuthenticationService } from '../../core/services/authentication.service';
 import { UserService } from '../../core/services/user.service';
 import { from } from 'rxjs';
-import { User } from 'src/app/shared/models/user.model';
+import { User } from '../../shared/models/user.model';
 
-@Component({ templateUrl: 'register.component.html' })
+@Component({ 
+    templateUrl: 'register.component.html',
+    styleUrls: ['./register.component.css']
+})
 export class RegisterComponent implements OnInit {
     registerForm: FormGroup;
     loading = false;
@@ -29,10 +32,10 @@ export class RegisterComponent implements OnInit {
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
-            firstName: ['', Validators.required],
-            lastName: ['', Validators.required],
-            username: ['', Validators.required],
-            password: ['', [Validators.required, Validators.minLength(6)]]
+            fullName: ['', Validators.required],
+            email: ['', [Validators.required, Validators.email]],
+            password: ['', [Validators.required, Validators.minLength(6)]],
+            retypePassword: ['', [Validators.required, Validators.minLength(6)]]
         });
     }
 
@@ -50,15 +53,14 @@ export class RegisterComponent implements OnInit {
             return;
         }
         const user = new User();
-        user.email = this.f.username.value;
-        user.fullName = `${this.f.firstName.value} ${this.f.lastName.value}`;
+        user.email = this.f.email.value;
+        user.fullName = this.f.fullName.value;
         user.isActive = true;
         user.isAdmin = true;
         user.isStaff = true;
         user.password = this.f.password.value;
         this.loading = true;
         this.userService.register(user)
-            .pipe(first())
             .subscribe(
                 data => {
                    // this.alertService.success('Registration successful', true);
