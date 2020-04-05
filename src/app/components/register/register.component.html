@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <mat-card>
                             <mat-card-content>
-                                    <mat-error>
+                                    <mat-error *ngIf=false>
                                         The username and password were not recognised
                                     </mat-error>
                                     <mat-form-field class="full-width-input">
@@ -44,7 +44,7 @@
                         </mat-card>
                     </div>
                     <div class="form-check">
-                        <div class="form-group checkbox-cust">
+                        <div class="form-group">
                             <input type="checkbox" id="check" class="cagree">
                             <label for="check">I have accepted the Term and Conditions</label>
 

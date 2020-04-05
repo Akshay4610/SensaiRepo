@@ -2,13 +2,13 @@ mat-card {
     width: 100%;
     margin: 2em auto;
     text-align: center;
-    height: 40vh;
+    height: 38vh;
     margin-top: 20px;
   }
   
   mat-form-field {
     display: block;
-    margin-top: 1px;
+    margin-top: 20px;
   }
 
   .center {
@@ -17,12 +17,12 @@ mat-card {
   .center-div{
     margin: auto;
     width: 100%;
-    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 75%;
+    height: 90%;  /* Mozilla*/
+    margin-top: 60px;
   }
 
   .checkbox-cust {
