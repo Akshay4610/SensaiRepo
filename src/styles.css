@@ -5,7 +5,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
-/* TODO check for font */
 @font-face {
     font-family: 'SegoeUI-Semibold';
     src: url('./assets/fonts/SegoeUI-Semibold/SegoeUI-Semibold.eot');
@@ -18,7 +17,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 @font-face {
     font-family: 'SegoeUI-Regular';
-    src: url('./assets/fonts//SegoeUI-Regular/SegoeUI-Regular.eot');
+    src: url('./assets/fonts/SegoeUI-Regular/SegoeUI-Regular.eot');
     src: url('./assets/fonts/SegoeUI-Regular/SegoeUI-Regular.eot') format('embedded-opentype'),
     url('./assets/fonts/SegoeUI-Regular/SegoeUI-Regular.woff') format('woff'),
     url('./assets/fonts/SegoeUI-Regular/SegoeUI-Regular.ttf') format('truetype'),
@@ -36,7 +35,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-weight: normal;
     font-style: normal;
 }
-
+header{
+    padding-top: 73px;
+}
 .generic-body{
     background: url(./assets/images/generic-bg.png) no-repeat;
     width: 100%;
@@ -52,11 +53,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color:#fff;
     font-family: 'SegoeUI-Regular';
 }
-
-/* You can add global styles to this file, and also import other style files */
-
-
-
 .middle-title{
     font-size: 24px;
     margin: 260px 0 50px 0;
@@ -101,7 +97,9 @@ button:focus {
 .middle-banner img{
     margin: 0 auto 30px;
 }
-
+.nopadding{
+    padding: 0;
+}
 .title:after {
     content: "";
     border-bottom: 2px solid #D7DBE6;
@@ -665,7 +663,7 @@ footer {
     background-position: 4px 11px !important;
 }
 .collapsed.list-group-item-success ~ .close-icon   {
-    background: url(./assets//images/choose.svg) no-repeat 3px 10px !important;
+    background: url(./assets/images/choose.svg) no-repeat 3px 10px !important;
     z-index: 1;
 }
 
@@ -1303,6 +1301,7 @@ aside .nav-tabs li {
 .generic-modal .modal-content .form-control {
     border: none;
     background-color: transparent;
+    border-bottom: 1px solid #5EA1CE;
     color: #D7DBE6;
     border-radius: 0;
 }
@@ -1785,6 +1784,13 @@ button:focus, input:focus{
     }
     .table-scroll {
         padding: 20px;
+    }
+}
+@media (min-width: 1025px){
+    .pr40{
+        padding-right: 40px;}
+    .main-container {
+        max-width: 1290px;
     }
 }
 
@@ -2706,3 +2712,5 @@ input:disabled{
         top: 40px;
     }
 }
+
+
