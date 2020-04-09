@@ -33,9 +33,10 @@
                                         </mat-error>
                                     </mat-form-field>
                                     <mat-form-field class="full-width-input">
-                                        <input matInput color="white" type="password" placeholder="Retype Password" formControlName="retypePassword" required>
-                                        <mat-error>
-                                            Please provide a valid password
+                                        <input matInput color="white" type="password" placeholder="Retype Password" formControlName="retypePassword"
+                                        [errorStateMatcher] = "errorStateMatcher" >
+                                        <mat-error *ngIf="registerForm.hasError('passwordsDoNotMatch')">
+                                            Password do no match
                                         </mat-error>
                                     </mat-form-field>
                                     <!-- <button class="login_button" mat-raised-button color="primary">Login</button> -->

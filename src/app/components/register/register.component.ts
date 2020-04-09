@@ -8,6 +8,8 @@ import { UserService } from '../../core/services/user.service';
 import { from } from 'rxjs';
 import { User } from '../../shared/models/user.model';
 
+import { MyErrorStateMatcher } from '../../shared/error.matcher';
+
 @Component({ 
     templateUrl: 'register.component.html',
     styleUrls: ['./register.component.css']
@@ -16,7 +18,7 @@ export class RegisterComponent implements OnInit {
     registerForm: FormGroup;
     loading = false;
     submitted = false;
-
+    errorStateMatcher = new MyErrorStateMatcher();
     constructor(
         private formBuilder: FormBuilder,
         private router: Router,
@@ -35,8 +37,10 @@ export class RegisterComponent implements OnInit {
             fullName: ['', Validators.required],
             email: ['', [Validators.required, Validators.email]],
             password: ['', [Validators.required, Validators.minLength(6)]],
-            retypePassword: ['', [Validators.required, Validators.minLength(6)]]
-        });
+            retypePassword: ['', [Validators.minLength(6)]]
+        }, {validator : this.checkPasswords});
+
+         
     }
 
     // convenience getter for easy access to form fields
@@ -76,4 +80,9 @@ export class RegisterComponent implements OnInit {
     // constructor() {}
     
     // ngOnInit() {}
+
+    checkPasswords(form: FormGroup) {
+        const condition = form.get('password').value !== form.get('retypePassword').value
+        return condition ? {passwordsDoNotMatch : true} : null;
+    }
 }
