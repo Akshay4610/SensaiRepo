@@ -15,6 +15,7 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
