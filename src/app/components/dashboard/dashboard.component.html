@@ -1,0 +1,1173 @@
+<div id="wrapper">
+    <div class="admin-panel">
+        <!-- navbar.html starts-->
+        <nav class="navbar  navbar-toggleable-sm navbar-invers nopadding dashboard-header admin-dashboard container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dashboard-header admin-dashboard admin-dashboard container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 dashboard-top-left">
+                        <div class="display-icon">
+                            <a href="" class="icon-div"><img src="../../../assets/images/admin-icon1.svg" class="d-inline" alt="icon" width="20"> <span>View</span></a>
+                            <a href="" class="icon-div"><img src="../../../assets/images/admin-icon2.svg" class="d-inline" alt="icon" width="20"><span>Recently added</span></a>
+                            <a href="#" class="icon-div"><img src="../../../assets/images/admin-icon3.svg" class="d-inline" alt="icon" width="20"> <span>Favorites</span></a>
+                            <a href="#" class="icon-div"><img src="../../../assets/images/admin-icon4.svg" class="d-inline" alt="icon" width="17"><span>Trash</span></a>
+                            <a href="#" class="icon-div analyze-tab"><img src="../../../assets/images/analyze.svg" class="d-inline" alt="icon" width="31"><span>Admin</span></a>
+                            <div class="search">
+                                <input type="text" placeholder="Search for a file" /><i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row d-flex open-sidebar">
+                <button type="button" class="hidden-md-up navbar-toggler" data-toggle="offcanvas" title="Toggle responsive left sidebar">
+                    <span class="navbar-toggler-icon"><img src="../../../assets/images/hamburger.svg" width="20"
+                                                    class="d-inline"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">All Files <span class="sr-only">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Recently added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myAlert" data-toggle="collapse">Favorites</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar.html ends -->
+        <div class="admin-dashboard container" id="main">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+                    <aside class="">
+                        <div class="container nopadding">
+                            <ul class="nav nav-tabs">
+                                <li class="row1"><a data-toggle="tab" href="#home"> Filter</a></li>
+                                <li class=""><a data-toggle="tab" href="#folder"> Reports</a></li>
+                                <li class="analyze-list"><a data-toggle="tab" href="#analyze"> Analyze</a></li>
+                            </ul>
+                            <div class="tab-content tab-content-dashboard">
+                                <div id="home" class="tab-pane fade in active">
+                                    <p>File Type</p>
+                                    <ul class="select-type">
+                                        <li><a href="#">PDF</a></li>
+                                        <li><a href="#">DOC</a></li>
+                                        <li><a href="#">TXT</a></li>
+                                    </ul>
+                                    <p>Year</p>
+                                    <div class="select-date">
+                                        <input type="text" placeholder="2008" />
+                                        <span>to</span>
+                                        <input type="text" placeholder="2009" />
+                                    </div>
+                                    <p>Author Name</p>
+                                    <div class="search-name">
+                                        <input type="text" placeholder="Search by author name" />
+                                    </div>
+                                    <p>Key words</p>
+                                    <div class="search-name">
+                                        <input type="text" placeholder="Write a key word" />
+                                    </div>
+                                    <button type="button" class="type-button blue-btn">books</button>
+                                    <button type="button" class="type-button red-btn">Statistics</button>
+                                </div>
+                                <div id="folder" class="tab-pane fade">
+                                    <div class="container-fluid nopadding">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- menu -->
+                                                <div id="MainMenu">
+                                                    <div class="list-group panel">
+                                                        <a href="#demo1" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Layout
+                                                            </a>
+                                                        <div class="collapse" id="demo1">
+                                                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu1">Folder
+                                                                    number 1</a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 2</a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 3</a>
+                                                        </div>
+                                                        <a href="#demo2" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Title
+                                                            </a>
+                                                        <div class="collapse" id="demo2" style="">
+                                                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder
+                                                                    number 1</a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 2</a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 3</a>
+                                                        </div>
+                                                        <a href="#demo3" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Tag Item
+                                                            </a>
+                                                        <div class="collapse" id="demo3" style="">
+                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder
+                                                                    Name 1 </a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 2</a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 3</a>
+                                                        </div>
+                                                        <a href="#demo4" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Add Note
+                                                            </a>
+                                                        <div class="collapse" id="demo4" style="">
+                                                            <a href="#SubMenu4" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu4">Folder
+                                                                    Name 1 </a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 2</a>
+                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                    number 3</a>
+                                                        </div>
+                                                        <a href="#demo5" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Review
+                                                            </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="analyze" class="tab-pane fade">
+                                    <div id="MainMenu1">
+                                        <div class="list-group panel">
+                                            <a href="#analyze1" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false"><span>Sources</span>
+                                                </a>
+                                            <div class="collapse" id="analyze1" style="">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+                                                    <label class="custom-control-label" for="switch1">A source</label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch2" name="example">
+                                                    <label class="custom-control-label" for="switch2">A source name
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch3" name="example">
+                                                    <label class="custom-control-label" for="switch3">A source</label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch4" name="example">
+                                                    <label class="custom-control-label" for="switch4">A source name
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch5" name="example">
+                                                    <label class="custom-control-label" for="switch5">A source name
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch6" name="example">
+                                                    <label class="custom-control-label" for="switch6">A source name
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch7" name="example">
+                                                    <label class="custom-control-label" for="switch7">A source name
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switch8" name="example">
+                                                    <label class="custom-control-label" for="switch8">A source name
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <a href="#analyze2" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Eligibility
+                                                </a>
+                                            <div class="collapse" id="analyze2" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#analyze3" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                <span>Similarity % </span>
+                                            </a>
+                                            <div class="collapse" id="analyze3" style="">
+                                                <br>
+                                                <p>Set the percent</p>
+                                                <span id="slider_value">Nothing yet.</span>
+                                                <input type="range" class="custom-range" id="customRange1" value="0.5" min="0.0" max="1.0" step="0.01" />
+
+                                                <p> Enter key words</p>
+                                                <div class="search-name">
+                                                    <input type="text" placeholder="eg: books, ice, home">
+                                                </div>
+                                                <button type="button" class="type-button blue-btn">books</button>
+                                                <button type="button" class="type-button red-btn">Statistics</button>
+                                                <br>
+                                                <p>Path to a reference document</p>
+                                                <div class="search-name">
+                                                    <input type="text" placeholder="eg: file path is storage medium">
+                                                </div>
+                                            </div>
+                                            <a href="#analyze4" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Relevancy %
+                                                </a>
+                                            <div class="collapse" id="analyze4" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#analyze5" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Bias Check
+                                                </a>
+                                            <div class="collapse" id="analyze5" style="">
+                                                <a href="#SubMenu2" class="radio-option list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Select Documents</a>
+                                                <a href="javascript:;" class="radio-option list-group-item subitem">Recently
+                                                        Selected</a>
+                                                <a href="#analyze56" class="radio-option list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">Bias
+                                                        Check Options</a>
+
+                                                <div class="collapse radio-list" id="analyze56">
+                                                    <!-- Default unchecked -->
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="defaultUnchecked1" name="defaultExampleRadios">
+                                                        <label class="custom-control-label" for="defaultUnchecked1"><span>By Date</span></label>
+                                                    </div>
+
+                                                    <!-- Default checked -->
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="defaultChecked2" name="defaultExampleRadios" checked>
+                                                        <label class="custom-control-label" for="defaultChecked2">By Location
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Default checked -->
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="defaultChecked3" name="defaultExampleRadios" checked>
+                                                        <label class="custom-control-label" for="defaultChecked3">By Facility </label>
+                                                    </div>
+
+                                                    <!-- Default checked -->
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="defaultChecked4" name="defaultExampleRadios" checked>
+                                                        <label class="custom-control-label" for="defaultChecked4">By Population </label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" class="custom-control-input" id="defaultChecked5" name="defaultExampleRadios" checked>
+                                                        <label class="custom-control-label" for="defaultChecked5">By Author </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <a href="#analyze6" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Quality Check
+                                                </a>
+                                            <div class="collapse" id="analyze6" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#analyze7" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Screening
+                                                </a>
+                                            <div class="collapse" id="analyze7" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+
+                                            <a href="#modeling" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Topic Modeling
+                                                </a>
+                                            <div class="collapse" id="modeling" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#frequencies" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Frequencies
+                                                </a>
+                                            <div class="collapse" id="frequencies" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#terms" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Important Terms(TFIDF)
+                                                </a>
+                                            <div class="collapse" id="terms" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+
+                                            <a href="#words" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Bag Of Words
+                                                </a>
+                                            <div class="collapse" id="words" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#analyze8" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Rules
+                                                </a>
+                                            <div class="collapse" id="analyze8" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                            <a href="#analyze9" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                    Taxonomy
+                                                </a>
+                                            <div class="collapse" id="analyze9" style="">
+                                                <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        2</a>
+                                                <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                        3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <!-- Data.html starts -->
+
+                <div class="nopadding admin-right">
+                    <div class="table-scroll">
+                        <ul class="drop-menu dashboard-menu navbar  navbar-toggleable-sm navbar-invers nopadding dashboard-header admin-dashboard container">
+                            <li>
+                                Window
+                            </li>
+                            <li class="btn-group active">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../../../assets/images/project-icon.svg" class="d-inline" alt="icon" width="30">
+                                    <span>Project </span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">New Project</a>
+                                    <a class="dropdown-item" href="#">New from Template</a>
+                                    <a class="dropdown-item" href="#">Open</a>
+                                    <a class="dropdown-item" href="#">Open Recent</a>
+                                    <a class="dropdown-item" href="#">Import Project</a>
+                                    <a class="dropdown-item" href="#">Export Project</a>
+                                    <a class="dropdown-item" href="#">Close</a>
+                                    <a class="dropdown-item" href="#">Save</a>
+                                    <a class="dropdown-item" href="#">Save as</a>
+                                    <a class="dropdown-item" href="#">Rename</a>
+                                </div>
+                            </li>
+                            <li class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../../../assets/images/edit-icon.svg" class="d-inline" alt="icon" width="30">
+                                    <span>Edit</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Cut</a>
+                                    <a class="dropdown-item" href="#">Paste</a>
+                                    <a class="dropdown-item" href="#">Clear</a>
+                                    <a class="dropdown-item" href="#">Clear All</a>
+                                    <a class="dropdown-item" href="#">Find</a>
+                                    <a class="dropdown-item" href="#">Insert Symbols</a>
+                                </div>
+                            </li>
+                            <li class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../../../assets/images/update-icon.svg" class="d-inline" alt="icon" width="30">
+                                    <span>Update</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Recent Change</a>
+                                    <a class="dropdown-item" href="#">Entire Project</a>
+                                </div>
+                            </li>
+                            <li class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../../../assets/images/ingest-icon.svg" class="d-inline" alt="icon" width="30"> <span>Ingest</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{% url 'add_file' 'csv">Structured Files (CSV, XLS)</a>
+                                    <a class="dropdown-item" href="{% url 'add_file' 'pdf">Documents (PDF, TXT)</a>
+                                    <a class="dropdown-item" href="{% url 'add_file' 'jpg">Scan Documents (PDF, JPEG)</a>
+                                    <a class="dropdown-item" href="{% url 'add_file' 'jpeg">Images (PDF, JPEG)</a>
+                                </div>
+                            </li>
+                            <li class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../../../assets/images/insert-icon.svg" class="d-inline" alt="icon" width="30"> <span>Insert</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Comments)</a>
+                                    <a class="dropdown-item" href="#">Pin Drop</a>
+                                    <a class="dropdown-item" href="#">Reminder</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="uploadcv" class="print-btn btn  btn-lg" data-toggle="modal" data-target="#print">
+                                    <img src="../../../assets/images/print-icon.svg" class="d-inline" alt="icon" width="30"><span>Print</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../../../assets/images/screenshot-icon.svg" class="d-inline" alt="icon" width="30"> <span>screen shot</span> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../../../assets/images/undo-icon.svg" class="d-inline" alt="icon" width="30">
+                                    <span>undo</span> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../../../assets/images/redo-icon.svg" class="d-inline" alt="icon" width="30">
+                                    <span>redo</span> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="../../../assets/images/help-icon.svg" class="d-inline" alt="icon" width="30">
+                                    <span>help</span> </a>
+
+                            </li>
+                        </ul>
+                        <div class="content">
+                            <div class="table-div">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="custom-control custom-checkbox checkbox-action">
+                                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="tablechecked1">
+                                                    <label class="custom-control-label" for="tablechecked1"></label>
+                                                </div>
+                                            </th>
+                                            <th scope="col"></th>
+                                            <th scope="col">Author</th>
+                                            <th scope="col">Year</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Journal</th>
+                                            <th scope="col">More</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="custom-control custom-checkbox checkbox-action">
+                                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="tablechecked2">
+                                                    <label class="custom-control-label" for="tablechecked2"></label>
+                                                </div>
+                                            </td>
+                                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline" /></td>
+                                            <td><span class="author-name"> Author name </span></td>
+                                            <td>2016</td>
+                                            <td>The Chicago Manual of Style: The ...</td>
+                                            <td>The Chicago Manual of Style: The ...</td>
+                                            <td>
+                                                <button type="button" class="folder-btn float-left" data-toggle="modal" data-target="#myModal">
+                                                    <svg id="Component_4_13" data-name="Component 4 – 13" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                        <rect id="Rectangle_3891" data-name="Rectangle 3891" width="24" height="24" fill="none"></rect>
+                                                        <path id="Union_32" class="doc-icon" data-name="Union 32" d="M4043.854,5992a.853.853,0,0,1-.678-.329.821.821,0,0,1-.175-.514h0v-14.265a.9.9,0,0,1,.91-.892h6.262l1.666,2.286h8.251a.9.9,0,0,1,.911.892v2.047h1.162a.883.883,0,0,1,.838.971v.057l-3.409,9.155a.843.843,0,0,1-.816.592Zm3.208-9.986-3.4,9.128a.173.173,0,0,0,.041.132.181.181,0,0,0,.149.074h14.921a.19.19,0,0,0,.182-.137l3.373-9.066c-.008-.089-.041-.268-.167-.268h-14.919A.188.188,0,0,0,4047.062,5982.014Zm-3.4-5.122v12.3l2.761-7.375a.835.835,0,0,1,.674-.58.867.867,0,0,1,.143-.012h13.089v-2.047a.242.242,0,0,0-.244-.239H4051.5l-1.666-2.286h-5.919A.243.243,0,0,0,4043.667,5976.892Zm6.066,13.64-1.633-1.633a.335.335,0,0,1,0-.478l1.633-1.633a.327.327,0,0,1,.238-.1.347.347,0,0,1,.239.1.339.339,0,0,1,0,.479l-1.053,1.053h1.971a2.939,2.939,0,0,0,2.335-1.144.343.343,0,0,1,.269-.131.338.338,0,0,1,.208.07.343.343,0,0,1,.063.477,3.612,3.612,0,0,1-2.872,1.407h-1.971l1.052,1.053a.339.339,0,0,1-.48.48Zm6.086-3.957a.337.337,0,0,1,0-.48l1.053-1.051H4054.9a2.939,2.939,0,0,0-2.335,1.145.343.343,0,0,1-.269.131.332.332,0,0,1-.208-.071.343.343,0,0,1-.063-.477,3.61,3.61,0,0,1,2.872-1.409h1.971l-1.052-1.052a.339.339,0,0,1,.48-.479l1.633,1.632a.339.339,0,0,1,0,.479l-1.633,1.632a.332.332,0,0,1-.238.1A.341.341,0,0,1,4055.819,5986.575Z" transform="translate(-4041 -5971.731)" fill="#5e6167"></path>
+                                                    </svg>
+                                                </button>
+                                                <svg id="Component_5_47" data-name="Component 5 – 47" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <rect id="Rectangle_3890" data-name="Rectangle 3890" width="24" height="24" fill="none" />
+                                                    <path id="_149220" class="star-icon" data-name="149220" d="M19.566,10.111a1.533,1.533,0,0,0,.363-1.534,1.444,1.444,0,0,0-1.158-1.019l-4.843-.734a.635.635,0,0,1-.477-.362l-2.165-4.58a1.408,1.408,0,0,0-2.572,0L6.549,6.461a.636.636,0,0,1-.477.362l-4.843.735A1.443,1.443,0,0,0,.071,8.576a1.533,1.533,0,0,0,.363,1.534l3.5,3.565a.68.68,0,0,1,.183.585l-.827,5.034a1.518,1.518,0,0,0,.57,1.464,1.373,1.373,0,0,0,1.511.114L9.705,18.5a.611.611,0,0,1,.59,0l4.331,2.377a1.376,1.376,0,0,0,1.511-.114,1.518,1.518,0,0,0,.57-1.464l-.827-5.034a.68.68,0,0,1,.183-.585ZM15.091,14.4l.827,5.034a.663.663,0,0,1-.252.647.6.6,0,0,1-.667.051l-4.331-2.377a1.382,1.382,0,0,0-1.335,0L5,20.133a.6.6,0,0,1-.667-.051.663.663,0,0,1-.252-.647L4.91,14.4A1.538,1.538,0,0,0,4.5,13.078L.993,9.512a.668.668,0,0,1-.16-.678.629.629,0,0,1,.511-.45L6.186,7.65a1.438,1.438,0,0,0,1.08-.819l2.165-4.58a.622.622,0,0,1,1.136,0l2.165,4.58a1.438,1.438,0,0,0,1.08.819l4.843.734a.629.629,0,0,1,.511.45.668.668,0,0,1-.16.678l-3.5,3.565A1.538,1.538,0,0,0,15.091,14.4Z" transform="translate(2 0.953)" fill="#5e6167" />
+                                                </svg>
+                                                <svg id="Component_6_47" class="star-icon" data-name="Component 6 – 47" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <rect id="Rectangle_3890" data-name="Rectangle 3890" width="24" height="24" fill="none" />
+                                                    <g id="Group_3178" data-name="Group 3178" transform="translate(-1264 -155)">
+                                                        <circle id="Ellipse_375" data-name="Ellipse 375" cx="2" cy="2" r="2" transform="translate(1274 173)" fill="#5e6167" />
+                                                        <circle id="Ellipse_376" data-name="Ellipse 376" cx="2" cy="2" r="2" transform="translate(1274 157)" fill="#5e6167" />
+                                                        <circle id="Ellipse_377" data-name="Ellipse 377" cx="2" cy="2" r="2" transform="translate(1274 165)" fill="#5e6167" />
+                                                    </g>
+                                                </svg>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="myModal" role="dialog">
+                                                    <div class="modal-dialog">
+                                                        <!-- Modal content-->
+                                                        <div class="modal-content">
+                                                            <div class="modal-footer-search">
+                                                                <input type="text" placeholder="Search for a folder" class="modal-search" />
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+                                                            <div class="col-md-12 nopadding">
+                                                                <!-- menu -->
+                                                                <div class="doc-inner">
+                                                                    <div class="list-group panel">
+                                                                        <div class="list-decoration icon-deco">
+                                                                            <a href="#popup-list1" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Folder name
+                                                            </a>
+                                                                            <span class="close-icon "></span>
+                                                                        </div>
+                                                                        <div class="collapse" id="popup-list1" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name
+                                                                1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                3</a>
+                                                                        </div>
+                                                                        <a href="#popup-list2" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                            Folder name
+                                                        </a>
+                                                                        <div class="collapse" id="popup-list2" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name 1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder number
+                                                                3</a>
+                                                                        </div>
+                                                                        <div class="list-decoration">
+                                                                            <a href="#popup-list3" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Folder name
+                                                            </a>
+                                                                        </div>
+                                                                        <div class="collapse" id="popup-list3" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name
+                                                                1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                3</a>
+                                                                        </div>
+                                                                        <div class="list-decoration">
+                                                                            <a href="#popup-list4" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Folder name
+                                                            </a>
+                                                                        </div>
+                                                                        <div class="collapse" id="popup-list4" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name
+                                                                1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                3</a>
+                                                                        </div>
+                                                                        <div class="list-decoration">
+                                                                            <a href="#popup-list5" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Folder name
+                                                            </a>
+                                                                        </div>
+                                                                        <div class="collapse" id="popup-list5" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name
+                                                                1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                3</a>
+                                                                        </div>
+                                                                        <div class="list-decoration">
+                                                                            <a href="#popup-list6" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Folder name
+                                                            </a>
+                                                                        </div>
+                                                                        <div class="collapse" id="popup-list6" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name
+                                                                1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                3</a>
+                                                                        </div>
+                                                                        <div class="list-decoration">
+                                                                            <a href="#popup-list7" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                                                                Folder name
+                                                            </a>
+                                                                        </div>
+                                                                        <div class="collapse" id="popup-list7" style="">
+                                                                            <a href="#SubMenu3" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu3">Folder Name
+                                                                1 </a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                2</a>
+                                                                            <a href="javascript:;" class="list-group-item subitem">Folder
+                                                                number
+                                                                3</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="footer-bottom">
+                                                                    <button>Create another folder</button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- {% for item in data %} -->
+                                        <!-- use ngfor here todo -->
+                                        <tr>
+                                            <td scope="row">
+                                                <div class="custom-control custom-checkbox checkbox-action">
+                                                    <form method="get">
+                                                        <input type="checkbox" name="check" class="custom-control-input" id="tablechecked3">
+                                                    </form>
+                                                    <label class="custom-control-label" for="tablechecked3"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <!-- {% if item.data_type == "txt"  %} -->
+                                                <!-- apply ngIf conditio todo -->
+                                                <img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline" />
+                                                <!-- {% elif item.data_type == "pdf" %}
+                                <img src="../../../assets/images/pdf-sml-icon.svg" width="20" class="d-inline"/>
+                                {% elif item.data_type == "jpeg" %}
+                                <img src="../../../assets/images/jpeg-sml-icon.svg" width="20" class="d-inline"/>
+                                {%  elif item.data_type == "csv" %}
+                                    <img src="../../../assets/images/csv-sml-icon.svg" width="20" class="d-inline"/>
+                                {% endif %} -->
+                                            </td>
+                                            <td><span class="author-name"> Author name </span></td>
+                                            <td>2020</td>
+                                            <!-- Check item.upfile todo -->
+                                            <td><a href="/media/{% get_path id=item.id %}" target="_blank">{{" item.up_file" }}</a></td>
+                                            <td>The Chicago Manual of Style: The ...</td>
+                                            <td>
+                                                <button type="button" class="folder-btn">
+                                                    <svg id="Component_3_41" data-name="Component 3 – 41" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                        <rect id="Rectangle_3891" data-name="Rectangle 3891" width="24" height="24" fill="none" />
+                                                        <path id="_149334" data-name="149334" d="M19.163,10.724H18V8.678a.9.9,0,0,0-.911-.892H8.838L7.172,5.5H.911A.9.9,0,0,0,0,6.392V20.657H0a.819.819,0,0,0,.174.514.855.855,0,0,0,.679.328h14.92a.844.844,0,0,0,.817-.592L20,11.753v-.058A.881.881,0,0,0,19.163,10.724ZM.667,6.392a.242.242,0,0,1,.244-.239H6.828L8.495,8.439h8.594a.242.242,0,0,1,.244.239v2.047H4.244a.853.853,0,0,0-.142.012.834.834,0,0,0-.674.58L.667,18.692Zm15.29,14.319a.188.188,0,0,1-.182.136H.855a.185.185,0,0,1-.149-.072.174.174,0,0,1-.041-.133l3.4-9.128a.188.188,0,0,1,.182-.136h14.92c.127,0,.159.178.167.267Z" transform="translate(2 -1.231)" fill="#5e6167" />
+                                                    </svg>
+                                                </button>
+                                                <svg id="Component_5_47" data-name="Component 5 – 47" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <rect id="Rectangle_3890" data-name="Rectangle 3890" width="24" height="24" fill="none" />
+                                                    <path id="_149220" class="star-icon" data-name="149220" d="M19.566,10.111a1.533,1.533,0,0,0,.363-1.534,1.444,1.444,0,0,0-1.158-1.019l-4.843-.734a.635.635,0,0,1-.477-.362l-2.165-4.58a1.408,1.408,0,0,0-2.572,0L6.549,6.461a.636.636,0,0,1-.477.362l-4.843.735A1.443,1.443,0,0,0,.071,8.576a1.533,1.533,0,0,0,.363,1.534l3.5,3.565a.68.68,0,0,1,.183.585l-.827,5.034a1.518,1.518,0,0,0,.57,1.464,1.373,1.373,0,0,0,1.511.114L9.705,18.5a.611.611,0,0,1,.59,0l4.331,2.377a1.376,1.376,0,0,0,1.511-.114,1.518,1.518,0,0,0,.57-1.464l-.827-5.034a.68.68,0,0,1,.183-.585ZM15.091,14.4l.827,5.034a.663.663,0,0,1-.252.647.6.6,0,0,1-.667.051l-4.331-2.377a1.382,1.382,0,0,0-1.335,0L5,20.133a.6.6,0,0,1-.667-.051.663.663,0,0,1-.252-.647L4.91,14.4A1.538,1.538,0,0,0,4.5,13.078L.993,9.512a.668.668,0,0,1-.16-.678.629.629,0,0,1,.511-.45L6.186,7.65a1.438,1.438,0,0,0,1.08-.819l2.165-4.58a.622.622,0,0,1,1.136,0l2.165,4.58a1.438,1.438,0,0,0,1.08.819l4.843.734a.629.629,0,0,1,.511.45.668.668,0,0,1-.16.678l-3.5,3.565A1.538,1.538,0,0,0,15.091,14.4Z" transform="translate(2 0.953)" fill="#5e6167" />
+                                                </svg>
+                                                <svg id="Component_6_47" class="star-icon" data-name="Component 6 – 47" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <rect id="Rectangle_3890" data-name="Rectangle 3890" width="24" height="24" fill="none" />
+                                                    <g id="Group_3178" data-name="Group 3178" transform="translate(-1264 -155)">
+                                                        <circle id="Ellipse_375" data-name="Ellipse 375" cx="2" cy="2" r="2" transform="translate(1274 173)" fill="#5e6167" />
+                                                        <circle id="Ellipse_376" data-name="Ellipse 376" cx="2" cy="2" r="2" transform="translate(1274 157)" fill="#5e6167" />
+                                                        <circle id="Ellipse_377" data-name="Ellipse 377" cx="2" cy="2" r="2" transform="translate(1274 165)" fill="#5e6167" />
+                                                    </g>
+                                                </svg>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row pl35">
+                                <div class="col-lg-2">
+                                    <p>Author</p>
+                                    <p>Client name</p>
+                                    <p class="rate-text">Rating</p>
+                                    <div class="star-rating">
+                                        <span class="fa fa-star-o" data-rating="1"></span>
+                                        <span class="fa fa-star-o" data-rating="2"></span>
+                                        <span class="fa fa-star-o" data-rating="3"></span>
+                                        <span class="fa fa-star-o" data-rating="4"></span>
+                                        <span class="fa fa-star-o" data-rating="5"></span>
+                                        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                    </div>
+                                </div>
+                                <div class="col-lg-1">
+                                    <p>Year</p>
+                                    <p>2016</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Title</p>
+                                    <p>The Chicago Manual of Style: The ...</p>
+                                    <p>Journal</p>
+                                    <p>The Chicago Manual of Style: The ...</p>
+                                    <p>Description</p>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new_content">
+                            <img src="../../../assets/images/dashboard-item.svg" class="d-inline" alt="icon" width="">
+                            <div class="color-type">
+                                <div>
+                                    <span class="red"></span>
+                                    <p>word, meaning color</p>
+                                </div>
+                                <div>
+                                    <span class="orange"></span>
+                                    <p>word, meaning color</p>
+                                </div>
+                                <div>
+                                    <span class="green"></span>
+                                    <p>word, meaning color</p>
+                                </div>
+                                <div>
+                                    <span class="l-blue"></span>
+                                    <p>word, meaning color</p>
+                                </div>
+                                <div>
+                                    <span class="blue"></span>
+                                    <p>word, meaning color</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-files">
+                            <div class="form-group">
+                                <input type="file" name="file" id="file" class="input-file">
+                                <label for="file" class="btn btn-tertiary js-labelFile">
+                                    <img src="../../../assets/images/upload.svg" class="d-inline" alt="icon" width="80">
+                                    <span class="js-fileName">Upload or Select Documents<br> to see thes Geo Tag</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="map-banner">
+                            <div class="container-fluid">
+                                <div class="map-responsive">
+                                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-details">
+                            <div class="date-details-inner">
+                                <div class="grey-box">
+                                </div>
+                                <div class="grey-box">
+                                </div>
+                                <div class="grey-box">
+
+                                </div>
+                                <div class="grey-box">
+
+                                </div>
+                                <div class="grey-box">
+
+                                </div>
+                                <div class="grey-box">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data.html ends-->
+    <div class="admin-right-banner">
+        <div class="admin-right-banner-header">
+            <div class="pl30">
+                <img src="../../../assets/images/eye.svg" width="32" class="float-left">
+                <p>The Chicago Manual of Style: The ...</p>
+            </div>
+            <span class="bordererd"></span>
+            <div class="top-search">
+                <input type="text" />
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="admin-pagination">
+                <a href="#"><img src="../../../assets/images/page-icon2.svg" class="d-inline" alt="icon" width="15"></a>
+                <a href="#"><img src="../../../assets/images/page-icon1.svg" class="d-inline" alt="icon" width="13"></a>
+                <a href="#" class="active-page">1</a>
+                <span>of</span>
+                <a href="#">156</a>
+                <a href="#"><img src="../../../assets/images/page-icon3.svg" class="d-inline" alt="icon" width="13"></a>
+                <a href="#"><img src="../../../assets/images/page-icon4.svg" class="d-inline" alt="icon" width="15"></a>
+            </div>
+        </div>
+        <div class="files files-dashboard">
+            <img src="../../../assets/images/text.png" class="d-inline" alt="icon" width="250" height="350">
+        </div>
+    </div>
+
+    <div class="admin-right-banner checkbox-active">
+        <div class="admin-right-banner-header">
+            <span class="bordererd"></span>
+        </div>
+        <div class="analyze-dropdown analyze-dropdown-right">
+            <div class="tab-pane fade active show">
+                <div id="">
+                    <div class="list-group panel">
+                        <a href="#demos9" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span>Graph</span>
+                        </a>
+                        <div class="collapse" id="demos9" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                        <a href="#demos17" class="list-group-item   list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span> Geo Map</span>
+                        </a>
+                        <div class="collapse" id="demos17" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                        <a href="#demos18" class="list-group-item list-group-item-success collapsed geo-tag" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span> Geo Tag</span>
+                        </a>
+                        <div class="collapse" id="demos18" style="">
+                            <a href="#SubMenu2" id="upload-files" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Upload File</a>
+                            <a href="javascript:;" class="list-group-item subitem select-file">Select Documents</a>
+                            <a href="javascript:;" class="list-group-item subitem">Recent Selection</a>
+                        </div>
+                        <a href="#demos19" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span>Meta Analysis</span>
+                        </a>
+                        <div class="collapse" id="demos19" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                        <a href="#demos20" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span>States</span>
+                        </a>
+                        <div class="collapse" id="demos20" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                        <a href="#demos21" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span>References</span>
+                        </a>
+                        <div class="collapse" id="demos21" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                        <a href="#demos22" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span>Notes</span>
+                        </a>
+                        <div class="collapse" id="demos22" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                        <a href="#demos23" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu" aria-expanded="false">
+                            <span>Collaborate</span>
+                        </a>
+                        <div class="collapse" id="demos23" style="">
+                            <a href="#SubMenu2" class="list-group-item subitem" data-toggle="collapse" data-parent="#SubMenu2">Folder number 1</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 2</a>
+                            <a href="javascript:;" class="list-group-item subitem">Folder number 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="documents">
+            <a href="#" id="back " class="back"><i class="fa fa-long-arrow-left"></i> Back to Geo Tag</a>
+            <div class="table-div">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control1">
+                                    <label class="custom-control-label" for="cst-control1"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2020</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control2">
+                                    <label class="custom-control-label" for="cst-control2"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control3">
+                                    <label class="custom-control-label" for="cst-control3"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control4">
+                                    <label class="custom-control-label" for="cst-control4"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control5">
+                                    <label class="custom-control-label" for="cst-control5"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control6">
+                                    <label class="custom-control-label" for="cst-control6"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control7">
+                                    <label class="custom-control-label" for="cst-control7"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control8">
+                                    <label class="custom-control-label" for="cst-control8"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control9">
+                                    <label class="custom-control-label" for="cst-control9"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control10">
+                                    <label class="custom-control-label" for="cst-control10"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control11">
+                                    <label class="custom-control-label" for="cst-control11"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control12">
+                                    <label class="custom-control-label" for="cst-control12"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control13">
+                                    <label class="custom-control-label" for="cst-control13"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="custom-control custom-checkbox checkbox-action">
+                                    <input type="checkbox" class="custom-control-input" name="checkbox" id="cst-control14">
+                                    <label class="custom-control-label" for="cst-control14"></label>
+                                </div>
+                            </td>
+                            <td><img src="../../../assets/images/txt-sml-icon.svg" width="20" class="d-inline"></td>
+                            <td><span class="author-name"> Author name </span></td>
+                            <td>2016</td>
+                            <td>The Chicago Manual of Style: The ...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="print">
+    <div class="modal-dialog upload-inner nopadding">
+        <div class="modal-content nopadding">
+            <div class="modal-header nopadding">
+                <div class="container nopadding">
+                    <h2>Print the file</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h2> printing content </h2>
+                </div>
+            </div>
+            <div class="modal-inner-footer">
+                <div class="print-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="select-tlt">Print</p>
+                                <section>
+                                    <select name="potencial" id="potencial" class="custom-select sources" placeholder="x5481FG">
+                                        <option va.custom-select-triggerlue="A">A</option>
+                                        <option value="B">x5481F</option>
+                                        <option value="C">x5481</option>
+                                        <option value="D">x5481</option>
+                                    </select>
+                                </section>
+                                <p class="select-tlt">Paper Size</p>
+                                <section>
+                                    <select name="potencial" id="potencia2" class="custom-select sources" placeholder="A4 (210x297mm)">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
+                                </section>
+                                <p class="select-tlt">Copied</p>
+                                <section>
+                                    <select name="potencial" id="potencia3" class="custom-select sources" placeholder="300">
+                                        <option value="A">200</option>
+                                        <option value="B">400</option>
+                                        <option value="C">300</option>
+                                        <option value="D">300</option>
+                                    </select>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="select-decoration">
+                                    <p class="select-tlt">Copied</p>
+                                    <div class="qty">
+                                        <input type="number" class="count" name="qty" value="1">
+                                        <span class="minus">-</span>
+                                        <span class="plus">+</span>
+                                    </div>
+                                </div>
+                                <div class="select-decoration">
+                                    <p class="select-tlt">Pages</p>
+                                    <section>
+                                        <select name="potencial" id="potencia4" class="custom-select sources" placeholder="All">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </section>
+                                </div>
+                                <div class="select-decoration">
+                                    <p class="select-tlt">Scale</p>
+                                    <section>
+                                        <select name="potencial" id="potencia5" class="custom-select sources" placeholder="Fit to page">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="select-decoration">
+                                    <p class="select-tlt">Orientation</p>
+                                    <section>
+                                        <select name="potencial" id="potencia6" class="custom-select sources" placeholder="Landscape">
+                                            <option value="A">Portrait</option>
+                                            <option value="B">Landscape</option>
+                                            <option value="C">Portrait</option>
+                                            <option value="D">Landscape</option>
+                                        </select>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="print-btn">
+                            <button onclick="myFunction()">Print</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="close-modal btn" data-dismiss="modal"><img src="../../../assets/images/close.svg" alt="icon" width=15></button>
+        </div>
+    </div>
+</div>

@@ -2081,6 +2081,7 @@ button:focus, input:focus{
     }
     .tab-content {
         padding: 50px 12px;
+        height: 100vh;
     }
     header .navbar-light .navbar-nav .nav-link {
         font-size: 14px;
